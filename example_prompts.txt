@@ -10,3 +10,7 @@ To generate initial game code (composer/agent):
 
 * Attach the concept.excalidraw.svg file to composer (or start composer with concept.excalidraw.svg in main window)
 * prompt: generate code for this concept in templates/[replace with game genre]/main.py, don't create other files
+
+To imagine a living game concept (composer/agent):
+
+* create a new concept template combining [genre 1] and [genre 2]
