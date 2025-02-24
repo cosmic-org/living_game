@@ -1,0 +1,12 @@
+To get latest genres from steam (composer/agent):
+
+@Web get a list of new game genres from steam
+
+To generate concepts (chat):
+
+describe the screen for a [replace with game genre], don't add story and just describe the screen and how player can move
+
+To generate initial game code (composer/agent):
+
+* Attach the concept.excalidraw.svg file to composer (or start composer with concept.excalidraw.svg in main window)
+* prompt: generate code for this concept in templates/[replace with game genre]/main.py, don't create other files
