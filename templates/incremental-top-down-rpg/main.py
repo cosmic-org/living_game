@@ -16,7 +16,7 @@ WORLD_HEIGHT = 2000
 
 # Player constants
 PLAYER_SPEED = 5
-PLAYER_SIZE = 32
+PLAYER_SIZE = 64
 
 # Mini-map constants
 MINIMAP_WIDTH = 150
@@ -112,8 +112,19 @@ class ResourceNode(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
-        self.image = pygame.Surface((PLAYER_SIZE, PLAYER_SIZE))
-        self.image.fill(GREEN)
+        # Load the player image
+        try:
+            self.image = pygame.image.load('templates/incremental-top-down-rpg/assets/player.png')
+            # Scale the image to match PLAYER_SIZE
+            self.image = pygame.transform.scale(self.image, (PLAYER_SIZE, PLAYER_SIZE))
+            # self.image = pygame.Surface((PLAYER_SIZE, PLAYER_SIZE))
+            # self.image.fill(GREEN)
+            
+        except pygame.error:
+            # Fallback to colored surface if image loading fails
+            self.image = pygame.Surface((PLAYER_SIZE, PLAYER_SIZE))
+            self.image.fill(GREEN)
+        
         self.rect = self.image.get_rect()
         
         self.rect.x = x
