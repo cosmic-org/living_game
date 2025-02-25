@@ -1,0 +1,187 @@
+{
+  "gameName": "Elemental Defenders",
+  "description": "Defend the elemental crystals from waves of invading monsters using towers infused with elemental powers.",
+  
+  "towers": [
+    {
+      "name": "Flame Tower",
+      "element": "fire",
+      "description": "Shoots fireballs that burn enemies over time.",
+      "upgrades": [
+        "Increased fire damage",
+        "Larger splash area",
+        "Adds a chance to stun enemies"
+      ]
+    },
+    {
+      "name": "Frost Tower", 
+      "element": "ice",
+      "description": "Slows enemies with chilling ice bolts.",
+      "upgrades": [
+        "Increased slow duration",
+        "Chance to freeze enemies solid",
+        "Adds splash damage"
+      ]
+    },
+    {
+      "name": "Lightning Tower",
+      "element": "electricity", 
+      "description": "Zaps enemies with chaining lightning.",
+      "upgrades": [
+        "Increased chain length",
+        "Higher damage per hit",
+        "Chance to critically strike"
+      ]
+    },
+    {
+      "name": "Gaia Tower",
+      "element": "earth",
+      "description": "Spawns thorn vines to entangle and damage enemies.",
+      "upgrades": [
+        "Faster vine growth",
+        "Vines slow enemies more",
+        "Chance for vines to root enemies in place"
+      ]
+    }
+  ],
+
+  "enemies": [
+    {
+      "name": "Goblin",
+      "type": "ground",
+      "description": "Small, quick, and weak to fire.",
+      "variants": [
+        "Regular",
+        "Shaman - Heals other goblins",
+        "Bombsmith - Explodes on death"  
+      ]
+    },
+    {
+      "name": "Orc",
+      "type": "ground",
+      "description": "Big, slow, and weak to ice.",
+      "variants": [
+        "Warrior",
+        "Berserker - Increases speed when damaged",
+        "Shieldbearer - High defense from the front"
+      ] 
+    },
+    {
+      "name": "Harpy",
+      "type": "flying",
+      "description": "Flying enemy weak to lightning.",
+      "variants": [
+        "Divebomber",
+        "Screecher - Reduces tower damage output",
+        "Matriarch - Buffs other harpies"
+      ]
+    },
+    {
+      "name": "Treant",
+      "type": "ground",
+      "description": "Lumbers slowly, spawns saplings, weak to fire.",
+      "variants": [
+        "Elder Treant - Tanky and spawns more saplings",
+        "Entling - Small treant spawned by others"
+      ]
+    }
+  ],
+
+  "progressionSystems": [
+    {
+      "name": "Element Mastery",
+      "description": "Earn elemental mastery points to unlock tower upgrades and passive buffs.",
+      "masteryBonuses": {
+        "fire": [
+          "Burn damage over time increased",
+          "Towers gain a fire damage aura"
+        ],
+        "ice": [
+          "All towers slow enemies slightly",
+          "Ice towers can freeze flying enemies"  
+        ],
+        "electricity": [
+          "All towers have increased range",
+          "Lightning tower hits can jump to more enemies"
+        ],
+        "earth": [
+          "Increased tower health",
+          "Gaia towers can spawn healing pods"
+        ]
+      }
+    },
+    {
+      "name": "Rune Crafting",
+      "description": "Collect rune fragments from slain enemies to craft special runes that can be socketed into towers for unique effects.",
+      "sampleRunes": [
+        "Rune of Swiftness - Increases tower attack speed",
+        "Rune of Elements - Adds a secondary element to the tower",
+        "Rune of Riches - Boosts gold earned from that tower's kills",
+        "Rune of Destruction - Substantially increases damage but lowers range"
+      ]
+    }
+  ],
+  
+  "specialMechanics": [
+    {
+      "name": "Elemental Overload",
+      "description": "Casting multiple towers of the same element next to each other builds Overload. At full Overload they unleash a powerful special attack.",
+      "overloadEffects": {
+        "fire": "Summons a fire meteor to scorch enemies",
+        "ice": "Blasts the area with a blizzard that freezes and damages",
+        "electricity": "Calls a lightning storm to rapidly strike enemies",
+        "earth": "Quakes the ground to damage and root all enemies"
+      }
+    },
+    {
+      "name": "Mana Wells",
+      "description": "Build your towers near Mana Wells to increase their power. Wells recharge between waves and can be upgraded."
+    },
+    {
+      "name": "Elemental Champions",
+      "description": "Call forth powerful elemental beings to aid you during battle. They are summoned using Elemental Charges earned from slaying enemies.",
+      "champions": [
+        "Phoenix - Flies the path raining fire down",
+        "Frost Giant - Smashes and freezes enemies",
+        "Lightning Serpent - Electrifies an area stunning and damaging foes", 
+        "Terraformer - Manipulates the battlefield to hinder enemies"
+      ]
+    }
+  ],
+  
+  "visualStyle": {
+    "theme": "Fantasy elemental world",
+    "artStyle": "Vibrant, colorful with distinct elemental visual effects",
+    "animations": {
+      "towers": "Unique attack animations for each element",
+      "enemies": "Distinctive movement and death animations",
+      "effects": "Spectacular elemental effects for special abilities"
+    }
+  },
+  
+  "audio": {
+    "music": "Epic fantasy soundtrack that intensifies during waves",
+    "soundEffects": {
+      "towers": "Unique sound for each tower type",
+      "enemies": "Distinctive sounds for different enemy types",
+      "abilities": "Powerful sounds for special abilities and overloads"
+    }
+  },
+  
+  "monetization": {
+    "model": "Free to play with optional purchases",
+    "purchasables": [
+      "Cosmetic tower skins",
+      "Additional maps",
+      "Special tower types",
+      "Resource boosters"
+    ]
+  },
+  
+  "uniqueSellingPoints": [
+    "Elemental synergy system that rewards strategic tower placement",
+    "Dynamic enemy AI that adapts to player strategies",
+    "Deep progression systems with multiple upgrade paths",
+    "Interactive environments with destructible elements and terrain advantages"
+  ]
+}
