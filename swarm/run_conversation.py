@@ -31,7 +31,7 @@ def run_conversation(agent1, agent2, turns: int, initial_prompt: str):
 def main():
     parser = argparse.ArgumentParser(description='Run a conversation between two AI agents')
     parser.add_argument('--prompt', type=str, 
-                       default="Let's create a simple text-based game. What kind of game should we make?",
+                       default="Let's create a unique elegant new kind of game genre. What kind of game should we make?",
                        help='The initial prompt to start the conversation')
     parser.add_argument('--turns', type=int, default=5,
                        help='Number of conversation turns')
