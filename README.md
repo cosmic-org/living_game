@@ -6,11 +6,23 @@ A collection of PyGame-based game templates and concepts to kickstart your game 
 
 This repository contains various game templates implemented in PyGame, along with concept documents in Excalidraw SVG format. Each template serves as a starting point for different game genres.
 
-## Available Templates
+## Swarm Agents System
 
-1. **Vertical Jumper** - A platformer-style game with vertical jumping mechanics
-2. **Top-Down RPG** - A role-playing game with top-down perspective
-3. **Shooter** - A shooting game template
+The project includes a sophisticated multi-agent system that enables complex emergent behaviors and interactions:
+
+### Agent Types
+- **Designer Agent**: Focuses on creating innovative and original gameplay mechanics
+- **Developer Agent**: Specializes in implementing novel game mechanics in Python
+- **Concept Agent**: Generates and manages game concepts and descriptions
+
+### Using the Agents
+```bash
+# Run a conversation between agents
+python swarm/run_conversation.py --prompt "Your game concept" --turns 5
+
+# Generate new game concepts
+python swarm/concept_agent.py "Your concept idea"
+```
 
 ## Getting Started
 
@@ -37,7 +49,12 @@ living_game/
 ├── templates/
 │   ├── vertical-jumper/
 │   ├── top-down-rpg/
-│   └── shooter/
+│   ├── shooter/
+├── swarm/
+│   ├── agent.py
+│   ├── designer_agent.py
+│   ├── developer_agent.py
+│   └── concept_agent.py
 ├── architecture.excalidraw.svg
 ├── requirements.txt
 └── main.py
@@ -50,6 +67,7 @@ Feel free to contribute by:
 2. Improving existing templates
 3. Enhancing documentation
 4. Reporting issues
+5. Extending the swarm agent system
 
 ## License
 
